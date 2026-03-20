@@ -5,7 +5,7 @@ An [agent skill](https://skills.sh) that generates interactive HTML slide deck p
 ## Install
 
 ```bash
-npx skills add davethegut/cursor-skill-presentation
+npx skills add davethegut/presentation-skill
 ```
 
 Works with [Cursor](https://cursor.com), [Claude Code](https://code.claude.com), [Codex](https://developers.openai.com/codex), [Windsurf](https://windsurf.com), [Cline](https://cline.bot), [GitHub Copilot](https://github.com/features/copilot), [Roo Code](https://roocode.com), and [40+ other agents](https://skills.sh/docs/cli).
@@ -99,20 +99,20 @@ Every generated deck includes:
 ### Via skills.sh (recommended)
 
 ```bash
-npx skills add davethegut/cursor-skill-presentation
+npx skills add davethegut/presentation-skill
 ```
 
 The CLI auto-detects which agents you have installed and offers to install to each one. Use flags for non-interactive installation:
 
 ```bash
 # Install to a specific agent
-npx skills add davethegut/cursor-skill-presentation -a cursor -y
+npx skills add davethegut/presentation-skill -a cursor -y
 
 # Install globally (available to all projects)
-npx skills add davethegut/cursor-skill-presentation -g
+npx skills add davethegut/presentation-skill -g
 
 # Install to all detected agents
-npx skills add davethegut/cursor-skill-presentation --all
+npx skills add davethegut/presentation-skill --all
 ```
 
 ### Manual installation
@@ -120,13 +120,13 @@ npx skills add davethegut/cursor-skill-presentation --all
 Clone the repo and copy into your agent's skills directory:
 
 ```bash
-git clone https://github.com/davethegut/cursor-skill-presentation.git
+git clone https://github.com/davethegut/presentation-skill.git
 
 # Cursor
-cp -r cursor-skill-presentation ~/.cursor/skills/skill-presentation
+cp -r presentation-skill ~/.cursor/skills/skill-presentation
 
 # Claude Code
-cp -r cursor-skill-presentation ~/.claude/skills/skill-presentation
+cp -r presentation-skill ~/.claude/skills/skill-presentation
 
 # Or any agent's skills directory
 ```
@@ -198,7 +198,7 @@ The slide component patterns are in [`components.md`](components.md) — add new
 
 ## Security
 
-The skill includes security rules from a [formal security review](https://github.com/davethegut/cursor-skill-presentation/blob/main/SKILL.md#rules):
+The skill includes security rules from a [formal security review](https://github.com/davethegut/presentation-skill/blob/main/SKILL.md#rules):
 
 - **No fabricated statistics** — every stat must cite a traceable source, or use `[DATA NEEDED]` placeholder
 - **URL protocol validation** — only `https://` URLs in href attributes
